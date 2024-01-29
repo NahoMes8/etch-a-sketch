@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <link rel="icon" href="logo.svg">
+</head>
+<body>
+    <h1>Etch-a-sketch</h1>
+    <p id="hint"></p>
+    <form>
+        <input type="radio" id="colorPicker" name="select">
+        <input type="color" id="colorVariation" value="#ff0000">
+        <label for="colorPicker">COLOR</label>
+        <input type="radio" id="blackPen" name="select">
+        <label for="blackPen">BLACK</label>
+        <input type="radio" id="rainbowPen" name="select">
+        <label for="rainbowPen">RAINBOW</label>
+        <input type="radio" id="eraser" name="select">
+        <label for="eraser">ERASER</label>
+        <input type="text" id="inputValue" name="text" placeholder="10" style="width:50px"> <span id="gridSize"></span>
+        <button id="submitBtn" style="font-size:14px"> submit</button>
+        <button id="clearBtn" style="font-size:14px" > clear</button>
+    </form>
+    <div id="container"></div>
+</body>
+</html>
